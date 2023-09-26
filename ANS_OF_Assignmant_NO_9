@@ -1,0 +1,28 @@
+1. A relative path refers to the location of a file or directory relative to the current working directory. It specifies how to reach the file or directory starting from the current location, without specifying the complete path from the root directory.
+
+2. An absolute path starts with the root directory of your operating system. On most systems, this is represented as a drive letter (e.g., "C:" on Windows) followed by a series of directories and subdirectories, leading to the target file or directory. An absolute path provides the full and unambiguous location of a file or directory.
+
+3. 
+   - `os.getcwd()`: This function stands for "get current working directory." It returns a string representing the current working directory of the Python script or program.
+   - `os.chdir(path)`: This function stands for "change directory." It allows you to change the current working directory to the specified path, enabling you to navigate the file system within your Python script.
+
+4. In file systems:
+   - "." (dot) represents the current directory.
+   - ".." (dot-dot) represents the parent directory of the current directory. It allows you to move up one level in the directory hierarchy.
+
+5. In the path "C:\bacon\eggs\spam.txt":
+   - "C:\bacon\eggs" is the directory name (dir name).
+   - "spam.txt" is the base name of the file.
+
+6. The three "mode" arguments that can be passed to the `open()` function are:
+   - `"r"`: Read mode. Opens the file for reading (default).
+   - `"w"`: Write mode. Opens the file for writing. If the file already exists, it will be truncated (emptied). If it doesn't exist, a new empty file will be created.
+   - `"a"`: Append mode. Opens the file for writing, but appends new data to the end of the file. If the file doesn't exist, a new empty file will be created.
+
+7. If an existing file is opened in write mode (`"w"`) using the `open()` function, it will be truncated, meaning all its existing contents will be deleted. If the file doesn't exist, a new empty file with the specified name will be created.
+
+8. 
+   - `read()`: Reads the entire contents of a file into a single string. It treats the file content as a single string and returns it.
+   - `readlines()`: Reads the lines of a file into a list where each element of the list corresponds to a line in the file. It returns a list of strings, with each string representing a line from the file.
+
+9. A shelf value in Python resembles a dictionary-like data structure. It is a persistent, on-disk storage format provided by the `shelve` module, and it allows you to store and retrieve Python objects using keys. Like a dictionary, it has key-value pairs, but the data is stored on disk, making it suitable for saving and loading data between program runs.
